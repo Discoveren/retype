@@ -13,11 +13,22 @@
         Practice your typing skills with a quote from Sherlock Holmes. Click
         **start** to begin!
       </p>
-      <div>
-        <p id="quote"></p>
-        <p id="message"></p>
-      </div>
-      <script src="assets/script.js"></script>
+      <p id="quote"></p>
+      <p id="message"></p>
     </div>
+    <div class="textArea-container">
+      <input
+        class="textArea"
+        type="text"
+        aria-label="current word"
+        id="typed-value"
+        rows="5"
+      />
+      <!-- The textbox for typing -->
+      <button type="button" id="start">Start</button>
+      <!-- To start the game -->
+      <div id="timer"></div>
+    </div>
+    <script src="assets/script.js"></script>
   </body>
 </html>
