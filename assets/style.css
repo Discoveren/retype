@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8fafc;
+}
+
+/* inside style.css */
+.highlight {
+  background-color: yellow;
+}
+
+.error {
+  background-color: lightcoral;
+  border: red;
+}
+
+.textArea-container {
+  text-align: center;
+  border: 1px solid red;
+  margin-top: 50px;
+}
+
+.textArea {
+  /* text-align: center; */
+  padding: 120px;
+  /* max-width: 100%; */
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* box-shadow: 1px 1px 1px #999; */
+  width: 50%;
+  border: 2px solid black;
+  /* border-bottom: 3px solid red; */
+}
+
+input[type="text"] {
+  color: #333;
+  height: 28px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+input:focus {
+  border: none;
+  /* outline: none; */
+}
+
+button {
+  background: none;
+  padding: 14px;
+  font: inherit;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 8px;
+  border: 3px solid #333;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: pink; /* Change only the border color */
+}
+
+#quote {
+  font-size: 30px;
+  margin-top: 20px;
+}
