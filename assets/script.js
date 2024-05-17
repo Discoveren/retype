@@ -11,10 +11,20 @@ const quotes = [
   "Nothing clears up a case so much as stating it to another person.",
   "Education never ends, Watson. It is a series of lessons, with the greatest for the last.",
 ];
-
 document.getElementById("start").addEventListener("click", () => {
   // Your existing code here...
 
+  // UI updates
+  // Create an array of span elements so we can set a class
+  const spanWords = words.map(function (word) {
+    return `<span>${word} </span>`;
+  });
+  // Convert into string and set as innerHTML on quote display
+  quoteElement.innerHTML = spanWords.join("");
+  // Highlight the first word
+  quoteElement.childNodes[0].className = "highlight";
+  // Clear any prior messages
+  messageElement.innerText = "";
   // Start the timer
   startTime = Date.now();
 
