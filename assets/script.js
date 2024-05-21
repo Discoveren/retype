@@ -16,3 +16,15 @@ const quotes = [
 const textDiplay = document.querySelector(".text-display");
 const inputField = document.querySelector(".input-field");
 const scoreDiplay = document.querySelector(".score-display");
+
+// function that selects a random quote from the array/
+
+function getRandomQuote() {
+  const quoteIndex = Math.floor(Math.random() * quotes.length);
+  return quotes[quoteIndex];
+
+  // to display the random quote selected to the page/
+}
+const selectedQuote = getRandomQuote();
+document.querySelector(".score-display").textContent = selectedQuote;
+// textDiplay.textContent = selectedQuote;
