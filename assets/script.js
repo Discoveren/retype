@@ -1,41 +1,18 @@
 //logic of the game//
-const timerElement = document.getElementById("timer");
 //Add the constants
 // all of our quotes
 const quotes = [
-  "When you have eliminated the impossible, whatever remains, however improbable, must be the truth.",
-  "There is nothing more deceptive than an obvious fact.",
-  "I ought to know by this time that when a fact appears to be opposed to a long train of deductions it invariably proves to be capable of bearing some other interpretation.",
-  "I never make exceptions. An exception disproves the rule.",
-  "What one man can invent another can discover.",
-  "Nothing clears up a case so much as stating it to another person.",
-  "Education never ends, Watson. It is a series of lessons, with the greatest for the last.",
+  "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
+  "The way to get started is to quit talking and begin doing. -Walt Disney",
+  "Your time is limited, so don't waste it living someone else's life. -Steve Jobs",
+  "If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt",
+  "Believe you can and you're halfway there. -Theodore Roosevelt",
+  "It does not matter how slowly you go as long as you do not stop. -Confucius",
+  "The only way to do great work is to love what you do. -Steve Jobs",
+  "Success is not final, failure is not fatal: It is the courage to continue that counts. -Winston Churchill",
+  "Happiness is not something ready-made. It comes from your own actions. -Dalai Lama",
+  "The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt",
 ];
-document.getElementById("start").addEventListener("click", () => {
-  // Your existing code here...
-
-  // UI updates
-  // Create an array of span elements so we can set a class
-  const spanWords = words.map(function (word) {
-    return `<span>${word} </span>`;
-  });
-  // Convert into string and set as innerHTML on quote display
-  quoteElement.innerHTML = spanWords.join("");
-  // Highlight the first word
-  quoteElement.childNodes[0].className = "highlight";
-  // Clear any prior messages
-  messageElement.innerText = "";
-  // Start the timer
-  startTime = Date.now();
-
-  // Update timer every second
-  timerInterval = setInterval(updateTimer, 1000);
-});
-
-function updateTimer() {
-  const currentTime = Date.now();
-  const elapsedTime = (currentTime - startTime) / 1000; // Convert milliseconds to seconds
-
-  // Display the elapsed time in seconds
-  timerElement.innerText = `${Math.floor(elapsedTime)} seconds`;
-}
+const textDiplay = document.querySelector(".text-display");
+const inputField = document.querySelector(".input-field");
+const scoreDiplay = document.querySelector(".score-display");
