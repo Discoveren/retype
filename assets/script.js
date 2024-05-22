@@ -108,6 +108,8 @@ function endGame() {
   console.log("Game ended");
   alert("Time's up! Game over.");
   // Optionally, you can reset the game or perform other actions
+  displayNextQuote();
+  timeRemaining = 20;
 }
 
 // Add event listener to the start button
