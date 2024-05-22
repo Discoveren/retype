@@ -1,6 +1,4 @@
-//logic of the game//
-//Add the constants
-// all of our quotes
+// Array of quotes
 const quotes = [
   "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
   "The way to get started is to quit talking and begin doing. -Walt Disney",
@@ -13,18 +11,31 @@ const quotes = [
   "Happiness is not something ready-made. It comes from your own actions. -Dalai Lama",
   "The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt",
 ];
-const textDiplay = document.querySelector(".text-display");
-const inputField = document.querySelector(".input-field");
-const scoreDiplay = document.querySelector(".score-display");
 
-// function that selects a random quote from the array/
-
+// Function to get a random quote
 function getRandomQuote() {
   const quoteIndex = Math.floor(Math.random() * quotes.length);
   return quotes[quoteIndex];
-
-  // to display the random quote selected to the page/
 }
-const selectedQuote = getRandomQuote();
-document.querySelector(".score-display").textContent = selectedQuote;
-// textDiplay.textContent = selectedQuote;
+
+// Display a random quote on the page
+const quoteDisplayElement = document.querySelector(".text-display");
+const quoteInputElement = document.querySelector(".input-field");
+const feedbackElement = document.querySelector(".feedback");
+const startButton = document.querySelector(".start-btn");
+
+// Function to start the game
+function startGame() {
+  const selectedQuote = getRandomQuote();
+  quoteDisplayElement.textContent = selectedQuote;
+  quoteInputElement.disabled = false;
+  quoteInputElement.focus();
+  startButton.style.display = "none";
+}
+
+function displayNextQuote() {
+  const selectedQuote = getRandomQuote();
+  quoteDisplayElement.textContent = selectedQuote;
+  quoteInputElement.value = "";
+  feedbackElement.innerHTML = "";
+}

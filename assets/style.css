@@ -1,4 +1,4 @@
-*,
+css *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -9,69 +9,60 @@
   padding: 0;
 }
 
-body {
-  background-color: #f8fafc;
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-/* inside style.css */
-.highlight {
-  background-color: yellow;
+.quote-container {
+  margin-bottom: 20px;
 }
 
-.error {
-  background-color: lightcoral;
-  border: red;
+.text-display {
+  font-size: 23px;
 }
 
-.textArea-container {
-  text-align: center;
-  border: 1px solid red;
-  margin-top: 50px;
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.textArea {
-  /* text-align: center; */
-  padding: 120px;
-  /* max-width: 100%; */
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  /* box-shadow: 1px 1px 1px #999; */
-  width: 50%;
-  border: 2px solid black;
-  /* border-bottom: 3px solid red; */
+.input-field {
+  font-size: 25px;
+  padding: 50px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
 }
 
-input[type="text"] {
+.feedback {
+  font-size: 16px;
   color: #333;
-  height: 28px;
-  padding-left: 10px;
-  text-decoration: none;
-  font-size: 50px;
 }
 
-input:focus {
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.start-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: royalblue;
+  color: white;
   border: none;
-  /* outline: none; */
-}
-
-button {
-  background: none;
-  padding: 14px;
-  font: inherit;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 30px;
-  border-radius: 8px;
-  border: 3px solid #333;
 }
 
-button:hover {
-  background-color: #333;
-  color: #fff;
-  border-color: pink; /* Change only the border color */
-}
-
-#quote {
-  font-size: 30px;
-  margin-top: 20px;
+span {
+  font-size: 25px;
 }
