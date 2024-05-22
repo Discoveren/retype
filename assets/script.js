@@ -23,6 +23,12 @@ const quoteDisplayElement = document.querySelector(".text-display");
 const quoteInputElement = document.querySelector(".input-field");
 const feedbackElement = document.querySelector(".feedback");
 const startButton = document.querySelector(".start-btn");
+const timerElement = document.querySelector(".timer");
+
+//add the timer variable
+let timeRemaining = 20;
+let timeInterval;
+let isTimerStarted = false;
 
 // Function to start the game
 function startGame() {
@@ -31,8 +37,31 @@ function startGame() {
   quoteInputElement.disabled = false;
   quoteInputElement.focus();
   startButton.style.display = "none";
+  startTimer();
+  isTimerStarted = true;
 }
 
+//Function to start the timer
+
+// Function to start the timer
+function startTimer() {
+  timerInterval = setInterval(() => {
+    timeRemaining--;
+    updateTimerDisplay(); // Call the function to update the timer display
+
+    if (timeRemaining === 0) {
+      clearInterval(timerInterval);
+      endGame(); // Call a function to handle the game ending
+    }
+  }, 1000); // Update every 1 second (1000 milliseconds)
+}
+
+// Function to update the timer display
+function updateTimerDisplay() {
+  if (isTimerStarted) {
+    timerElement.textContent = timeRemaining;
+  }
+}
 function displayNextQuote() {
   const selectedQuote = getRandomQuote();
   quoteDisplayElement.textContent = selectedQuote;
@@ -68,9 +97,18 @@ function compareInput(userInput) {
   feedbackElement.innerHTML = feedbackHTML;
   // Check if the user has completed the quote
   if (userInput === quote) {
-    alert("Do want a medal? go do some work!");
+    {
+      alert("Congratulations! You typed the quote correctly.");
+    }
     displayNextQuote();
   }
 }
+
+function endGame() {
+  console.log("Game ended");
+  alert("Time's up! Game over.");
+  // Optionally, you can reset the game or perform other actions
+}
+
 // Add event listener to the start button
 startButton.addEventListener("click", startGame);
