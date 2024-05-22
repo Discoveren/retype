@@ -39,3 +39,38 @@ function displayNextQuote() {
   quoteInputElement.value = "";
   feedbackElement.innerHTML = "";
 }
+
+// Add event listener to capture user input
+
+quoteInputElement.addEventListener("input", handleInput);
+// Function to handle user input
+function handleInput() {
+  const userInput = quoteInputElement.value;
+  compareInput(userInput);
+}
+
+// Function to compare user input with the generated quote
+
+function compareInput(userInput) {
+  const quote = quoteDisplayElement.textContent;
+  let feedbackHTML = "";
+
+  for (let i = 0; i < quote.length; i++) {
+    if (i < userInput.length) {
+      if (userInput[i] === quote[i]) {
+        feedbackHTML += `<span class = "correct" >${quote[i]}</span>`;
+      } else {
+        feedbackHTML += `<span class = "incorrect" >${quote[i]}</span>`;
+      }
+    }
+  }
+
+  feedbackElement.innerHTML = feedbackHTML;
+  // Check if the user has completed the quote
+  if (userInput === quote) {
+    alert("Do want a medal? go do some work!");
+    displayNextQuote();
+  }
+}
+// Add event listener to the start button
+startButton.addEventListener("click", startGame);
