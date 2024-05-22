@@ -63,6 +63,10 @@ css *,
   cursor: pointer;
 }
 
+.timer-container {
+  margin-top: 20px;
+}
+
 span {
   font-size: 25px;
 }
