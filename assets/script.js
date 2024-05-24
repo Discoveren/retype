@@ -41,8 +41,6 @@ function startGame() {
   isTimerStarted = true;
 }
 
-//Function to start the timer
-
 // Function to start the timer
 function startTimer() {
   timerInterval = setInterval(() => {
@@ -109,7 +107,7 @@ function endGame() {
   alert("Time's up! Game over.");
   // Optionally, you can reset the game or perform other actions
   displayNextQuote();
-  timeRemaining = 20;
+  timeRemaining.value = 20;
 }
 
 // Add event listener to the start button
