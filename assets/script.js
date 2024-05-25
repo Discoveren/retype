@@ -26,7 +26,7 @@ const startButton = document.querySelector(".start-btn");
 const timerElement = document.querySelector(".timer");
 
 //add the timer variable
-let timeRemaining = 20;
+let timeRemaining = 1;
 let timeInterval;
 let isTimerStarted = false;
 
@@ -43,12 +43,12 @@ function startGame() {
 
 // Function to start the timer
 function startTimer() {
-  timerInterval = setInterval(() => {
+  timeInterval = setInterval(() => {
     timeRemaining--;
     updateTimerDisplay(); // Call the function to update the timer display
 
     if (timeRemaining === 0) {
-      clearInterval(timerInterval);
+      clearInterval(timeInterval);
       endGame(); // Call a function to handle the game ending
     }
   }, 1000); // Update every 1 second (1000 milliseconds)
@@ -106,8 +106,9 @@ function endGame() {
   console.log("Game ended");
   alert("Time's up! Game over.");
   // Optionally, you can reset the game or perform other actions
+  timeRemaining = 21;
   displayNextQuote();
-  timeRemaining.textContent = 20;
+  startTimer();
 }
 
 // Add event listener to the start button
