@@ -16,6 +16,7 @@
 <li><a href="#technologies">Technologies</a></li>
 <li><a href="#testing">Testing</a></li>
 <li><a href="#future-features">Future Features</a></li>
+</ol>
 
 ## User Experience
 
@@ -63,6 +64,7 @@
 ## Future Features
 
 <ul>
+<li><a href="#wireframes">Wireframes</a></li>
     <li>Store page where a user can order for collection or delivery.</li>
     <li>Working carousel with JavaScript implementation.</li>
     <li>Loyalty scheme so everytime a user order it adds a tally and provide bonuses depending on the amount of orders.</li>
@@ -71,11 +73,12 @@
 
 
 <li>User Profiles: Allow users to create and manage profiles to save their progress, high scores, and typing statistics.</li>
-
-<ul>Typing Modes:</ul>
+<ul>
+Typing Modes:
 <li>Basic Practice: Random words or sentences to type.</li>
 <li>Timed Challenges: Type as many words as possible within a set time.</li>
 <li>Story Mode: Type through progressively difficult levels with a storyline.</li>
+</ul>
 <li>Custom Text: Allow users to input their own text or select famous quotes, book excerpts, etc.</li>
 <li>Real-time Feedback: Show typing speed (words per minute), accuracy, and error correction in real-time.</li>
 <li>Progress Tracking: Provide detailed statistics over time, such as WPM, accuracy, and improvement graphs.</li>
