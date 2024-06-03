@@ -1,4 +1,4 @@
-# [retype](https://discoveren.github.io/retype/)
+# [ReType](https://discoveren.github.io/retype/)
 
 Retype: A Typing Game
 
