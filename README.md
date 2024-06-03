@@ -65,7 +65,10 @@ This project was created using HTML, CSS and JavaScript.
 
 <p>I created a typing game to enhance my typing skills because I believe that interactive and engaging methods are the most effective for learning. By incorporating game elements, I can practice regularly while enjoying the process, making it easier to track my progress and stay motivated. This approach not only improves my speed and accuracy but also helps me build muscle memory and increase my overall efficiency when typing. </p>
 
+## Features
 
+### Typing Page
+<img src="./doc/features.png" style="width:798px;"/>
 
 ## Technologies
 
