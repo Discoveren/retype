@@ -9,6 +9,10 @@ css *,
   padding: 0;
 }
 
+.main-header {
+  margin-bottom: 20px;
+}
+
 .game-container {
   display: flex;
   flex-direction: column;

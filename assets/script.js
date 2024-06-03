@@ -1,3 +1,5 @@
+//Written by Renniel Pena 03 June 2024//
+
 // Array of quotes
 const quotes = [
   "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
@@ -26,7 +28,7 @@ const startButton = document.querySelector(".start-btn");
 const timerElement = document.querySelector(".timer");
 
 //add the timer variable
-let timeRemaining = 1;
+let timeRemaining = 30;
 let timeInterval;
 let isTimerStarted = false;
 
