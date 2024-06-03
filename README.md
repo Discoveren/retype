@@ -21,7 +21,6 @@ This project was created using HTML, CSS and JavaScript.
 </ul>
 <li><a href="#features">Features</a></li>
 <li><a href="#technologies">Technologies</a></li>
-<li><a href="#testing">Testing</a></li>
 <li><a href="#future-features">Future Features</a></li>
 </ol>
 
@@ -54,7 +53,7 @@ This project was created using HTML, CSS and JavaScript.
 
 ## Design
 
-### Wireframe
+### Wireframes
 
 ### Home Page and main section mockup
 <img src="./doc/wireframe1.png" style="width:798px;"/>
