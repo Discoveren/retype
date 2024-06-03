@@ -1,5 +1,12 @@
 # [retype](https://discoveren.github.io/retype/)
 
+Retype: A Typing Game
+
+"Retype" is a fun and educational game that improves typing speed and accuracy while providing motivational quotes.
+
+This project was created using HTML, CSS and JavaScript.
+
+![retype - different devices view](./doc/responsiveness.png)
 
 ## Table of Contents
 <ol>
@@ -48,6 +55,11 @@
 ## Design
 
 ### Wireframe
+
+### Home Page and main section mockup
+<img src="./doc/wireframe1.png" style="width:798px;"/>
+<img src="./doc/wireframe2.png" style="width:798px;"/>
+
 
 
 ### Website Idea
