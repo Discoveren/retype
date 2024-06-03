@@ -68,12 +68,14 @@
 ## Future Features
 
 <li>User Profiles: Allow users to create and manage profiles to save their progress, high scores, and typing statistics.</li>
-<ol>
+
 <li>Typing Modes:</li>
+<ol>
 <li>Basic Practice: Random words or sentences to type.</li>
 <li>Timed Challenges: Type as many words as possible within a set time.</li>
 <li>Story Mode: Type through progressively difficult levels with a storyline.</li>
 </ol>
+
 <li>Custom Text: Allow users to input their own text or select famous quotes, book excerpts, etc.</li>
 <li>Real-time Feedback: Show typing speed (words per minute), accuracy, and error correction in real-time.</li>
 <li>Progress Tracking: Provide detailed statistics over time, such as WPM, accuracy, and improvement graphs.</li>
