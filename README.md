@@ -75,6 +75,8 @@ This project was created using HTML, CSS and JavaScript.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Integrated to add the logic of the game.
 - [GitHub](https://github.com/): Hosted the code repository for the website.
 - [Git](https://git-scm.com/): Managed version control and code updates.
+- [Google Fonts](https://fonts.google.com/): Imported fonts for enhanced typography.
+- [Balsamiq](https://balsamiq.com/): It was used to make the wireframes for the initial website idea.
 
 
 ## Future Features
