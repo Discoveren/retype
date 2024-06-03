@@ -45,10 +45,14 @@
 <li>As a social gamer, I want to compare my scores with friends through leaderboards for added motivation and competition.</li>
 </ul>
 
+## Design
 
-### Initial Idea
+### Wireframe
 
-<p>I wanted to make a typing game to help im/p>
+
+### Website Idea
+
+<p>I created a typing game to enhance my typing skills because I believe that interactive and engaging methods are the most effective for learning. By incorporating game elements, I can practice regularly while enjoying the process, making it easier to track my progress and stay motivated. This approach not only improves my speed and accuracy but also helps me build muscle memory and increase my overall efficiency when typing. /p>
 
 
 
@@ -56,7 +60,7 @@
 
 - [HTML](https://web.dev/learn/html/overview/): Provided structure and semantic elements for content.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Styled HTML elements for improved visual presentation.
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Integrated to add google maps api to the website.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Integrated to add the logic of the game.
 - [GitHub](https://github.com/): Hosted the code repository for the website.
 - [Git](https://git-scm.com/): Managed version control and code updates.
 
@@ -65,7 +69,7 @@
 
 <li>User Profiles: Allow users to create and manage profiles to save their progress, high scores, and typing statistics.</li>
 <ol>
-Typing Modes:
+<li>Typing Modes:</li>
 <li>Basic Practice: Random words or sentences to type.</li>
 <li>Timed Challenges: Type as many words as possible within a set time.</li>
 <li>Story Mode: Type through progressively difficult levels with a storyline.</li>
