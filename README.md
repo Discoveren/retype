@@ -68,6 +68,7 @@ This project was created using HTML, CSS and JavaScript.
 ## Features
 
 ### Typing Page
+<p>The purpose of this page is provide the user with a quote and an input section where they could type the quote.</p>
 <img src="./doc/features.png" style="width:798px;"/>
 
 ## Technologies
